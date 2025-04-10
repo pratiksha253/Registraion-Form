@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 500px;
+            margin: 0 auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, td {
+            border: 3px solid black;
+        }
+        td {
+            padding: 8px;
+        }
+        input, select, textarea {
+            width:80%;
+            padding: 5px;
+            margin-top: 5px;
+        }
+        .buttons {
+            text-align: center;
+        }
+        .radio-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px; /* Adjust spacing between radio button and text */
+            margin-right: 15px; /* Add spacing between options */
+        }
+        
+        input[type="radio"] {
+            margin: 0;
+            width: 16px;
+            height: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    
+    <h2 align="center">Registration Form</h2>
+    <form>
+        <table style="background-color:lightgray">
+            <tr>
+                <td>Enter your first name</td>
+                <td><input type="text" placeholder="Enter your first name"></td>
+            </tr>
+            <tr>
+                <td>Enter your last name</td>
+                <td><input type="text" placeholder="Enter your last name"></td>
+            </tr>
+            <tr>
+                <td>Enter your password</td>
+                <td><input type="password" placeholder="Enter your password"></td>
+            </tr>
+            <tr>
+                <td>ReEnter your password</td>
+                <td><input type="password" placeholder="ReEnter your password "></td>
+            </tr>
+            <tr>
+                <td>Enter your email</td>
+                <td><input type="email" placeholder="Enter your email"></td>
+            </tr>
+            <tr>
+                <td>Enter your mobile number</td>
+                <td><input type="tel" placeholder="Enter your mobile number"></td>
+            </tr>
+            <tr>
+                <td>Enter your address</td>
+                <td><textarea rows="3" placeholder="Enter your address"></textarea></td>
+            </tr>
+            <tr>
+                <td>Select your gender</td>
+                <td>
+                    <label for="male">
+                        <input type="radio" id="male" name="gender" value="male"> Male
+                    </label>
+                    <label for="female">
+                        <input type="radio" id="female" name="gender" value="female"> Female
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>Select your hobbies</td>
+                <td>
+                    <input type="checkbox"> Hobby1
+                    <input type="checkbox"> Hobby2
+                    <input type="checkbox"> Hobby3
+                </td>
+            </tr>
+            <tr>
+                <td>Select your DOB</td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td>Select your Country</td>
+                <td>
+                    <select>
+                        <option>Select your country</option>
+                        <option>USA</option>
+                        <option>UK</option>
+                        <option>India</option>
+                        <option>Australia</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Upload your pic</td>
+                <td><input type="file"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="buttons">
+                    <button type="submit">Save My Data</button>
+                    <button type="reset">Reset Data</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+</body>
+</html>
